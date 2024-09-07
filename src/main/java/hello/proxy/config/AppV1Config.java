@@ -6,9 +6,11 @@ import hello.proxy.app.v1.OrderRepositoryV1;
 import hello.proxy.app.v1.OrderRepositoryV1Impl;
 import hello.proxy.app.v1.OrderServiceV1;
 import hello.proxy.app.v1.OrderServiceV1Impl;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+@Slf4j
 @Configuration
 public class AppV1Config {
 
