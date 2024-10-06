@@ -8,7 +8,6 @@ import org.springframework.aop.Advisor;
 import org.springframework.aop.aspectj.AspectJExpressionPointcut;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
 import org.springframework.aop.support.NameMatchMethodPointcut;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
@@ -40,7 +39,7 @@ public class AutoProxyConfig {
         return new DefaultPointcutAdvisor(pointcut, logTraceAdvice);
     }
 
-    @Bean
+//    @Bean
     public Advisor advisor3(LogTrace logTrace) {
         /*
          *  " *                  : 모든 반환타입 "
